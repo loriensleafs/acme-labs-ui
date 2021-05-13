@@ -5,6 +5,7 @@
       "packages/*"
     ]
   },
+  "license": "MIT",
   "scripts": {
     "pkg": "manypkg run",
     "check:pkgs": "manypkg check",
