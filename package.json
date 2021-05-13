@@ -6,6 +6,11 @@
       "packages/*"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loriensleafs/acme-labs-ui.git"
+  },
+  "author": "Peter Kloss <pkloss@gmail.com>",
   "license": "MIT",
   "scripts": {
     "pkg": "manypkg run",
