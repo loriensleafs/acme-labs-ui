@@ -1,0 +1,31 @@
+{
+  "name": "@acme-labs/editable",
+  "version": "1.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "build": "concurrently yarn:build:*",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "clean": "rimraf dist && rimraf node_modules",
+    "prebuild": "rimraf dist",
+    "start": "nodemon --watch src --exec yarn build -e ts,tsx",
+    "test": "jest --env=jsdom --passWithNoTests",
+    "test:cov": "yarn test --coverage",
+    "version": "yarn build"
+  },
+  "dependencies": {
+    "@chakra-ui/editable": "^1.2.5"
+  }
+}
