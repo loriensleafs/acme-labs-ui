@@ -1,5 +1,11 @@
 # @acme-labs/ui
 
+## 1.1.1
+
+### Patch Changes
+
+- 446f04b: Export UIProvider as alias to ChakraProvider instead of custom code.
+
 ## 1.1.0
 
 ### Minor Changes
