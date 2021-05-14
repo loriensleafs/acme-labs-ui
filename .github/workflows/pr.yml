@@ -1,4 +1,4 @@
-name: PR Workflow
+name: Pull Request
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ jobs:
       - name: Get Yarn cache path
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
-        
+
       - name: Checkout
         uses: actions/checkout@master
 
