@@ -1,0 +1,77 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Anchor,
+  Description,
+  Source,
+  Stories,
+  Subheading,
+  Subtitle,
+  Title,
+  ColorPalette,
+  ColorItem,
+} from '@storybook/addon-docs/blocks'
+import { theme } from '@chakra-ui/theme'
+
+<Meta title="theme/Colors" />
+
+## Colors
+
+<br />
+
+<ColorPalette>
+  <ColorItem title="theme.color.black" subtitle="Black" colors={[theme.colors.black]} />
+  <ColorItem title="theme.color.white" subtitle="White" colors={[theme.colors.white]} />
+  <ColorItem
+    title="theme.color.gray"
+    subtitle="Gray"
+    colors={Object.values(theme.colors.gray)}
+  />
+  <ColorItem
+    title="theme.color.red"
+    subtitle="Red"
+    colors={Object.values(theme.colors.red)}
+  />
+  <ColorItem
+    title="theme.color.orange"
+    subtitle="Orange"
+    colors={Object.values(theme.colors.orange)}
+  />
+  <ColorItem
+    title="theme.color.yellow"
+    subtitle="Yellow"
+    colors={Object.values(theme.colors.yellow)}
+  />
+  <ColorItem
+    title="theme.color.green"
+    subtitle="Green"
+    colors={Object.values(theme.colors.green)}
+  />
+  <ColorItem
+    title="theme.color.teal"
+    subtitle="Teal"
+    colors={Object.values(theme.colors.teal)}
+  />
+  <ColorItem
+    title="theme.color.blue"
+    subtitle="Blue"
+    colors={Object.values(theme.colors.blue)}
+  />
+  <ColorItem
+    title="theme.color.cyan"
+    subtitle="Cyan"
+    colors={Object.values(theme.colors.cyan)}
+  />
+  <ColorItem
+    title="theme.color.purple"
+    subtitle="Purple"
+    colors={Object.values(theme.colors.purple)}
+  />
+  <ColorItem
+    title="theme.color.pink"
+    subtitle="Pink"
+    colors={Object.values(theme.colors.pink)}
+  />
+</ColorPalette>
