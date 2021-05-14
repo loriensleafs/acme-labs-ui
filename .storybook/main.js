@@ -3,11 +3,17 @@ const path = require('path')
 const toPath = (_path) => path.join(process.cwd(), _path)
 
 module.exports = {
-  stories: [
-    '../packages/**/stories/**/*.stories.mdx',
-    '../packages/**/stories/**/*.stories.@(js|jsx|ts|tsx)',
+  stories: ['../packages/**/*.stories.@(js|jsx|ts|tsx|md|mdx)'],
+  addons: [
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+      },
+    },
+    '@storybook/addon-essentials',
+    '@storybook/addon-a11y',
   ],
-  addons: [ '@storybook/addon-essentials','storybook-addon-performance/register','@storybook/addon-a11y'],
   typescript: {
     reactDocgen: 'react-docgen-typescript',
   },
