@@ -1,6 +1,13 @@
 # @acme-labs/system
 
+## 1.1.0
+
+### Minor Changes
+
+- 9e9e1c0: Exports both chakra-ui/system exports as well as aliased exports.
+
 ## 1.0.0
+
 ### Major Changes
 
 - b07068e: - Adds breadcrumb package/component.
