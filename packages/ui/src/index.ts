@@ -1,11 +1,12 @@
 export {
+  ChakraProvider as UIProvider,
+  ChakraProviderProps as UIProviderProps,
   extendTheme,
   withDefaultProps,
   withDefaultSize,
   withDefaultVariant,
   withDefaultColorScheme,
 } from '@chakra-ui/react'
-export * from './provider'
 export * from '@acme-labs/accordion'
 export * from '@acme-labs/alert'
 export * from '@acme-labs/avatar'
