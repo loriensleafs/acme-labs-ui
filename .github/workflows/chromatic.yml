@@ -10,8 +10,10 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Checkout
-        uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
 
       - name: Enable node
         uses: actions/setup-node@master
